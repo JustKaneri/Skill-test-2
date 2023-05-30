@@ -20,6 +20,11 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseInMemoryDatabase("MemoryDB");
 });
 
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader().WithExposedHeaders("*");
+}));
+
 var app = builder.Build();
 
 TempData.CreateTmpData(app);
@@ -29,6 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("corsapp");
 
 app.UseAuthorization();
 
