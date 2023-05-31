@@ -34,7 +34,7 @@ namespace Skill_tests_2.Data
                         new Comment()
                         {
                             Content = "Comment 2",
-                            BackColorHex = "6B362B"
+                            BackColorHex = "#6B362B"
                         }
                     }
                 },
@@ -43,18 +43,42 @@ namespace Skill_tests_2.Data
                     Xcoordinate = 350,
                     Ycoordinate = 350,
                     Radius = 15,
-                    ColorHex = "#A9361E",
+                    ColorHex = "#F11990",
                     Comments = new List<Comment>()
                     {
                         new Comment()
                         {
                             Content = "Comment 2.1",
-                            BackColorHex = "#A76E62"
+                            BackColorHex = "#A01E69"
                         },
                         new Comment()
                         {
                             Content = "Comment 2.2",
-                            BackColorHex = "6B362B"
+                            BackColorHex = "#6B362B"
+                        }
+                    }
+                },
+                new Point()
+                {
+                    Xcoordinate = 500,
+                    Ycoordinate = 50,
+                    Radius = 50,
+                    ColorHex = "#2b2369",
+                    Comments = new List<Comment>()
+                    {
+                        new Comment()
+                        {
+                            Content = "Comment 3.1",
+                            BackColorHex = "#665ac7"
+                        },
+                        new Comment()
+                        {
+                            Content = "Comment 3.2",
+                            BackColorHex = "#d5d1eb"
+                        },
+                        new Comment()
+                        {
+                            Content = "Comment 3.3"
                         }
                     }
                 }

@@ -7,11 +7,6 @@ GetData().then(function(data) {
     
     data.map((value)=>{
       canv.createPoint(value);
+      canv.craeteTable(value);
     });
 });
-
-// 1) Получть данные +
-// 2) Преобразовать в классы -
-// 3) Нарисовать круги +
-// 4) Нарисовать таблицы
-// 5) Добавить обработчики событий +

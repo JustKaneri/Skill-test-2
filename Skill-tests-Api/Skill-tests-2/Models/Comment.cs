@@ -16,7 +16,7 @@ namespace Skill_tests_2.Models
         public string Content { get; set; }
 
         [RegularExpression(@"^#[0-9a-f]{3,6}$", ErrorMessage = "Некорректный формат цвета")]
-        public string BackColorHex { get; set; }
+        public string? BackColorHex { get; set; }
 
         [Required]
         public int PointId { get; set; }
