@@ -2,7 +2,7 @@
 
 ## Сервер
 
-> Asp net core 6 Web API [Документация API](Skill-tests-Api/Readme.md)
+> Asp net core 6 Web API [Документация API](Skill-tests-Api/README.md)
 
 
 ## Клиент
